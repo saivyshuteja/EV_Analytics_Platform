@@ -18,7 +18,7 @@ from ai.agents.nodes import (
     rag_node,
 
     comparison_node,
-
+    multi_query_node,
     general_agent_node,
 
     synthesizer_node
@@ -26,25 +26,18 @@ from ai.agents.nodes import (
 
 
 def route_intent(state):
-
     intent = state["intent"]
 
     if intent == "statistical_query":
-
         return "statistics"
-
     elif intent == "prediction_query":
-
         return "prediction"
-
     elif intent == "knowledge_query":
-
         return "rag"
-
     elif intent == "comparison_query":
-
         return "comparison"
-
+    elif intent == "multi_query":
+        return "multi_query"
     return "general"
 
 
@@ -83,6 +76,11 @@ builder.add_node(
 )
 
 builder.add_node(
+    "multi_query",
+    multi_query_node
+)
+
+builder.add_node(
     "synthesizer",
     synthesizer_node
 )
@@ -110,7 +108,8 @@ builder.add_conditional_edges(
 
         "comparison":
         "comparison",
-
+        "multi_query":
+        "multi_query",
         "general":
         "general"
     }
@@ -147,6 +146,13 @@ builder.add_edge(
 builder.add_edge(
 
     "general",
+
+    "synthesizer"
+)
+
+builder.add_edge(
+
+    "multi_query",
 
     "synthesizer"
 )

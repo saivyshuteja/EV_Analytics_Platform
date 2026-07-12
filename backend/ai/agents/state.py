@@ -28,3 +28,5 @@ class AgentState(TypedDict):
     current_node: str
 
     iteration_count: int
+
+    detected_intents: list[str]

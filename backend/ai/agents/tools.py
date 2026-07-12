@@ -6,9 +6,9 @@ from langchain.tools import tool
 from ml.evaluator import compare_models
 from ml.predictor import EVPredictor
 
-STATS_DIR = Path(__file__).resolve().parents[2] / "statistics"
+STATS_DIR = Path(__file__).resolve().parents[2] / "ev_statistics"
 sys.path.insert(0, str(STATS_DIR))
-from descriptive import EVStatistics
+from ev_statistics.descriptive import EVStatistics
 
 
 stats = EVStatistics()
