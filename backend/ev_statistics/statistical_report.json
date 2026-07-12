@@ -1,0 +1,264 @@
+{
+    "summary": {
+        "Model Year": {
+            "count": 287763.0,
+            "mean": 2022.2072990620754,
+            "std": 3.0753251317049415,
+            "min": 1999.0,
+            "25%": 2021.0,
+            "50%": 2023.0,
+            "75%": 2024.0,
+            "max": 2027.0
+        },
+        "Electric Range": {
+            "count": 287754.0,
+            "mean": 37.82869742905398,
+            "std": 77.22358877888354,
+            "min": 0.0,
+            "25%": 0.0,
+            "50%": 0.0,
+            "75%": 32.0,
+            "max": 337.0
+        }
+    },
+    "top_makes": {
+        "TESLA": 118575,
+        "CHEVROLET": 19700,
+        "NISSAN": 16076,
+        "FORD": 15800,
+        "KIA": 14368,
+        "TOYOTA": 12673,
+        "BMW": 11876,
+        "HYUNDAI": 11367,
+        "RIVIAN": 9237,
+        "VOLKSWAGEN": 7770
+    },
+    "ev_distribution": {
+        "counts": {
+            "Battery Electric Vehicle (BEV)": 232271,
+            "Plug-in Hybrid Electric Vehicle (PHEV)": 55492
+        },
+        "percentages": {
+            "Battery Electric Vehicle (BEV)": 80.72,
+            "Plug-in Hybrid Electric Vehicle (PHEV)": 19.28
+        }
+    },
+    "cafv_distribution": {
+        "counts": {
+            "Eligibility unknown as battery range has not been researched": 186814,
+            "Clean Alternative Fuel Vehicle Eligible": 77431,
+            "Not eligible due to low battery range": 23518
+        },
+        "percentages": {
+            "Eligibility unknown as battery range has not been researched": 64.92,
+            "Clean Alternative Fuel Vehicle Eligible": 26.91,
+            "Not eligible due to low battery range": 8.17
+        }
+    },
+    "yearly_registrations": {
+        "1999": 2,
+        "2000": 7,
+        "2002": 1,
+        "2003": 1,
+        "2008": 17,
+        "2010": 22,
+        "2011": 548,
+        "2012": 1326,
+        "2013": 3868,
+        "2014": 3143,
+        "2015": 4376,
+        "2016": 5054,
+        "2017": 8390,
+        "2018": 13946,
+        "2019": 10781,
+        "2020": 12069,
+        "2021": 20883,
+        "2022": 30105,
+        "2023": 60531,
+        "2024": 49399,
+        "2025": 36940,
+        "2026": 26227,
+        "2027": 127
+    },
+    "top_cities": {
+        "Seattle": 44185,
+        "Bellevue": 13973,
+        "Vancouver": 10717,
+        "Redmond": 9867,
+        "Bothell": 9445,
+        "Kirkland": 8211,
+        "Sammamish": 7938,
+        "Renton": 7677,
+        "Olympia": 6741,
+        "Tacoma": 6331,
+        "Kent": 4998,
+        "Spokane": 4848,
+        "Bellingham": 4818,
+        "Lynnwood": 4741,
+        "Everett": 4605
+    },
+    "correlation_matrix": {
+        "Postal Code": {
+            "Postal Code": 1.0,
+            "Model Year": -0.0,
+            "Electric Range": 0.002,
+            "Legislative District": -0.429,
+            "DOL Vehicle ID": 0.007,
+            "2020 Census Tract": 0.508
+        },
+        "Model Year": {
+            "Postal Code": -0.0,
+            "Model Year": 1.0,
+            "Electric Range": -0.549,
+            "Legislative District": 0.002,
+            "DOL Vehicle ID": 0.357,
+            "2020 Census Tract": 0.006
+        },
+        "Electric Range": {
+            "Postal Code": 0.002,
+            "Model Year": -0.549,
+            "Electric Range": 1.0,
+            "Legislative District": 0.003,
+            "DOL Vehicle ID": -0.203,
+            "2020 Census Tract": 0.001
+        },
+        "Legislative District": {
+            "Postal Code": -0.429,
+            "Model Year": 0.002,
+            "Electric Range": 0.003,
+            "Legislative District": 1.0,
+            "DOL Vehicle ID": -0.007,
+            "2020 Census Tract": -0.094
+        },
+        "DOL Vehicle ID": {
+            "Postal Code": 0.007,
+            "Model Year": 0.357,
+            "Electric Range": -0.203,
+            "Legislative District": -0.007,
+            "DOL Vehicle ID": 1.0,
+            "2020 Census Tract": 0.004
+        },
+        "2020 Census Tract": {
+            "Postal Code": 0.508,
+            "Model Year": 0.006,
+            "Electric Range": 0.001,
+            "Legislative District": -0.094,
+            "DOL Vehicle ID": 0.004,
+            "2020 Census Tract": 1.0
+        }
+    },
+    "skewness_kurtosis": {
+        "Electric Range": {
+            "skewness": 2.204458635067425,
+            "kurtosis": 3.560507763641148
+        },
+        "Model Year": {
+            "skewness": -1.2154491185487677,
+            "kurtosis": 1.2138953649364441
+        }
+    },
+    "outlier_analysis": {
+        "Model Year": {
+            "Q1": 2021.0,
+            "Q3": 2024.0,
+            "IQR": 3.0,
+            "Lower Bound": 2016.5,
+            "Upper Bound": 2028.5
+        },
+        "Electric Range": {
+            "Q1": 0.0,
+            "Q3": 32.0,
+            "IQR": 32.0,
+            "Lower Bound": -48.0,
+            "Upper Bound": 80.0
+        }
+    },
+    "cafv_vs_evtype": {
+        "Battery Electric Vehicle (BEV)": {
+            "Clean Alternative Fuel Vehicle Eligible": 45449,
+            "Eligibility unknown as battery range has not been researched": 186814,
+            "Not eligible due to low battery range": 8
+        },
+        "Plug-in Hybrid Electric Vehicle (PHEV)": {
+            "Clean Alternative Fuel Vehicle Eligible": 31982,
+            "Eligibility unknown as battery range has not been researched": 0,
+            "Not eligible due to low battery range": 23510
+        }
+    },
+    "make_vs_evtype": {
+        "Battery Electric Vehicle (BEV)": {
+            "BMW": 5218,
+            "CHEVROLET": 15284,
+            "FORD": 11916,
+            "HYUNDAI": 10060,
+            "KIA": 9971,
+            "NISSAN": 16073,
+            "RIVIAN": 9237,
+            "TESLA": 118575,
+            "TOYOTA": 2596,
+            "VOLKSWAGEN": 7770
+        },
+        "Plug-in Hybrid Electric Vehicle (PHEV)": {
+            "BMW": 6658,
+            "CHEVROLET": 4416,
+            "FORD": 3884,
+            "HYUNDAI": 1307,
+            "KIA": 4397,
+            "NISSAN": 3,
+            "RIVIAN": 0,
+            "TESLA": 0,
+            "TOYOTA": 10077,
+            "VOLKSWAGEN": 0
+        }
+    },
+    "yoy_growth": {
+        "1999": 0.0,
+        "2000": 250.0,
+        "2002": -85.71,
+        "2003": 0.0,
+        "2008": 1600.0,
+        "2010": 29.41,
+        "2011": 2390.91,
+        "2012": 141.97,
+        "2013": 191.7,
+        "2014": -18.74,
+        "2015": 39.23,
+        "2016": 15.49,
+        "2017": 66.01,
+        "2018": 66.22,
+        "2019": -22.69,
+        "2020": 11.95,
+        "2021": 73.03,
+        "2022": 44.16,
+        "2023": 101.07,
+        "2024": -18.39,
+        "2025": -25.22,
+        "2026": -29.0,
+        "2027": -99.52
+    },
+    "cumulative_count": {
+        "1999": 2,
+        "2000": 9,
+        "2002": 10,
+        "2003": 11,
+        "2008": 28,
+        "2010": 50,
+        "2011": 598,
+        "2012": 1924,
+        "2013": 5792,
+        "2014": 8935,
+        "2015": 13311,
+        "2016": 18365,
+        "2017": 26755,
+        "2018": 40701,
+        "2019": 51482,
+        "2020": 63551,
+        "2021": 84434,
+        "2022": 114539,
+        "2023": 175070,
+        "2024": 224469,
+        "2025": 261409,
+        "2026": 287636,
+        "2027": 287763
+    }
+}
